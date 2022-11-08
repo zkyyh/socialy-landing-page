@@ -15,19 +15,19 @@ function App() {
   const menus = ["Demos", "About", "Blog", "Pages", "Contact"];
   const benefit = [
     {
-      icon: "iconchat",
+      icon: iconchat,
       title: "Chat in real-time",
       subtitle:
         "Set clear expectations with customers based on your team's bandwidth.",
     },
     {
-      icon: "iconchatbot",
+      icon: iconchatbot,
       title: "Time with chatbots",
       subtitle:
         "Help users help themselves with powerful bots for support and sales.",
     },
     {
-      icon: "iconchatbot",
+      icon: iconaction,
       title: "Action with integrate",
       subtitle:
         "Integrate with 300+ apps, or build your own. You can use them in conversations.",
@@ -112,7 +112,7 @@ function App() {
           </p>
         </div>
 
-        <div className="py-20">
+        <div className="py-15">
           <div className="grid grid-cols-3 mx-auto py-14 px-40">
             {benefit.map((val, index) => {
               return (
@@ -120,12 +120,12 @@ function App() {
                   key={index}
                   className="flex-flex-row border rounded-xl mx-5 px-10 py-10 text-left"
                 >
-                  <img src={val.icon} className="w-6" />
+                  <img src={val.icon} alt="icon" className="w-10 pb-3" />
                   <div className="text-xl font-bold py-2">{val.title}</div>
                   <div className="text-slate-500 text-sm">{val.subtitle}</div>
                   <button className="flex flex-nowrap items-center text-red-500 font-semibold pt-10">
                     Discover More
-                    <MdArrowRightAlt />
+                    <MdArrowRightAlt className="ml-2" />
                   </button>
                 </div>
               );
@@ -133,8 +133,8 @@ function App() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 mt-32 mx-28 items-center">
-          <img src={illustration1} alt="logo" class="ml-8 w-2/3" />
+        <div className="grid grid-cols-2 mt-28 mx-28 items-center">
+          <img src={illustration1} alt="illustration1" class="ml-8 w-2/3" />
           <div>
             <h2 className=" font-bold text-5xl pb-5 text-left">
               Everyone wins with a conversational approach
@@ -165,7 +165,7 @@ function App() {
               team
             </div>
           </div>
-          <img src={illustration2} alt="logo" class="w-2/3 ml-28" />
+          <img src={illustration2} alt="illustration2" class="w-2/3 ml-28" />
         </div>
 
         <div className="grid grid-cols-3 mx-auto bg-gray-100 py-14 px-32">
@@ -180,7 +180,7 @@ function App() {
         </div>
 
         <div className="grid grid-cols-2 mt-32 mx-28 items-center">
-          <img src={illustration3} alt="logo" class="ml-8 w-2/3" />
+          <img src={illustration3} alt="illustration3" class="ml-8 w-2/3" />
           <div>
             <h2 className="font-bold text-5xl pb-10 text-left">
               Cohesive and coordinated campaigns
